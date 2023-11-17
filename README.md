@@ -14,9 +14,9 @@ To run the model:
 
 2. Build the Docker image by running:
 
-   ```
-   docker build -t receipt_pred .
-   ```
+
+   docker build -t receipt_pred 
+   
 
    This command installs all the requirements for this project.
 
