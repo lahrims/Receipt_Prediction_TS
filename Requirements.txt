@@ -13,6 +13,6 @@ statsmodels==0.14.0
 sympy==1.12
 torch==2.1.0
 xgboost==2.0.2
-git
+gitpython
 gunicorn
 pmdarima
