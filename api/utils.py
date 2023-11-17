@@ -9,7 +9,7 @@ from functions import add_lags, createFeatures
 
 class RecieptCountPredictor(ABC):
     def __init__(self, model_name) -> None:
-        with open(f"/Users/lahari/Documents/TakeHomeFetch/ReceiptPredictions/models/{model_name}.pckl", "rb") as mod:
+        with open(f"models/{model_name}.pckl", "rb") as mod:
             try:
                 self.model = pickle.load(mod)
             except (OSError, FileNotFoundError, TypeError):
@@ -48,7 +48,7 @@ class FBProphetPredictor(RecieptCountPredictor):
 class XGBPredictor(RecieptCountPredictor):
     def __init__(self) -> None:
         super().__init__("xgb")
-        self.df = pd.read_csv("../data/df_xgb.csv",index_col='# Date') 
+        self.df = pd.read_csv("data/df_xgb.csv",index_col='# Date') 
 
     def preprocess_inputs(self, target_date):
         future = pd.date_range(start=target_date, end=target_date)
