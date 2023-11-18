@@ -151,7 +151,7 @@ Checking for seasonality and trend in a time series dataset is essential when se
 
 8. Saved the models using Pickle for future use.
 
-## Inferencd
+## Inference
 
 1. Implemented an abstract class in util.py, providing a flexible foundation for easy extension of the project by adding more models.
 
