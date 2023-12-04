@@ -46,7 +46,7 @@ cd ../path/
 ```
 4.	Run the Docker build 
 ```
-docker build -t receipt_pred
+docker build -t receipt_pred .
 ```
 5.	This goes through requirements.txt and installs all the required libraries for this project 
 6.	Now to Run the web application that rus with a simple flask and html rendering which predicts the receipt counts for the day
